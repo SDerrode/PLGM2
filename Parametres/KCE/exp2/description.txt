@@ -1,0 +1,1 @@
+Cette expérience teste l'algorithme EM du filtre de Kalman couple sur des données adaptées au filtre de Kalman et compare les résultats.

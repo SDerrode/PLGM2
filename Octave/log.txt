@@ -1,0 +1,60 @@
+filter::t_0 = 
+[0.000000	0.000000	0.000000]
+filter::Q_0 = 
+[1.000000	0.000000	0.000000
+0.000000	1.000000	0.000000
+0.000000	0.000000	1.000000]
+filter::F = 
+[0.500000	0.100000	0.100000
+0.100000	0.400000	0.200000
+0.100000	0.200000	0.500000]
+filter::Q = 
+[1.000000	0.000000	0.000000
+0.000000	1.000000	0.000000
+0.000000	0.000000	1.000000]
+filter::size_x = 1.000000
+filter::size_y = 2.000000
+EM::F_0 = 
+[0.500000	0.100000	0.100000
+0.100000	0.400000	0.200000
+0.100000	0.200000	0.500000]
+EM::Q_0 = 
+[1.000000	0.000000	0.000000
+0.000000	1.000000	0.000000
+0.000000	0.000000	1.000000]
+nb_iter_EM = 300.000000
+EM::equivalence_type = 0.000000
+F::block::sets = 
+[1.000000	1.000000	1.000000]
+F::block(1)::hypothesis = 
+"known_block
+"
+F::block(1)::P = 
+"I
+"
+F::block(2)::hypothesis = 
+"known_block
+"
+F::block(2)::P = 
+"I
+"
+Q::block::sets = 
+[1.000000	2.000000	2.000000]
+Q::block(1)::hypothesis = 
+"free_block
+"
+Q::block(2)::hypothesis = 
+"t2_block
+"
+Q::block(2)::P = 
+"I
+"
+Q::block(2)::t2_block::nb_lambda = 1.000000
+Q::block(2)::t2_block::M(1) = 
+[1.000000	0.250000
+0.250000	1.000000]
+EM:first_state_estimation = 0.000000
+Warning : likelihood[1] - likelihood[0] < -1e-6
+You must check your EM initial parameters.
+Because they have to take account of constraints!
+
