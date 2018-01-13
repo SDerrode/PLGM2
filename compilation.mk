@@ -32,3 +32,4 @@ TMP_DIR=.tmp
 
 #Répertoire des applications (do not forget ending "/")
 APP_DIR=../../Executables/
+#APP_DIR=/Users/MacBook_Derrode/Documents/temp/VALERIAN/Programmes/Executables/

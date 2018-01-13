@@ -2,26 +2,22 @@
 #                                 Options                              #
 #======================================================================#
 
-#Répertoire des applications (do not forget ending "/")
-APP_DIR=../../Executables/
+#Nom de la bibliothèque
+NAME=lib_PKF_gsl
 
 #Description
-DESC="Pairwise Kalman filter programs"
+DESC="Pairwise Kalman filter algorithmes"
 
-#Auteur	
+#Auteur
 AUTHOR="Valérian Némesin"
-
-#Nom de la bibliothèque
-NAME=tkalman
-
 
 #Dépendances
 #Lib. statiques
-S_LIBS=../../API ../PKF ../API ../Simulation
-
+S_LIBS=
 #Lib. dynamiques
 D_LIBS=gsl
 
 #Options principales
-M_OPTIONS=../../compilation.mk
+M_OPTIONS=../../../compilation.mk
+
 
