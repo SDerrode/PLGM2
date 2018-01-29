@@ -1,0 +1,28 @@
+
+all:
+	@(cd gsl; make)
+	@(cd Filter;make)
+	@(cd F_estimation; make)
+	@(cd Q_estimation;make)
+	@(cd EM;make)
+	@(cd Equivalence;make)
+
+clean:
+	@(cd gsl; make clean)
+	@(cd Filter;make clean)
+	@(cd F_estimation; make clean)
+	@(cd Q_estimation;make clean)
+	@(cd EM;make clean)
+	@(cd Equivalence;make clean)
+
+MrProper:
+	@(cd gsl; make MrProper)
+	@(cd Filter;make MrProper)
+	@(cd F_estimation; make MrProper)
+	@(cd Q_estimation;make MrProper)
+	@(cd EM;make MrProper)
+	@(cd Equivalence;make MrProper)
+
+forced:
+	make clean
+	make all
