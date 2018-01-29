@@ -58,9 +58,7 @@
 	
 all :
 	@rm -f $(LOG_FILE)
-	@for i in `seq 0 $(N)`; do\
-		$(MAKE_ALL)\
-	done
+	@make -f makefile_subdirs
 	make $(NAME).a 
 
 #Compilation forcée
@@ -72,6 +70,7 @@ forced :
 
 #Suppression des .o
 clean :
+	@make -f makefile_subdirs clean
 	$(MAKE_CLEAN)
 	@echo "### Make clean $(NAME)"
 	@rm -f ${INCLUDEFILE}
@@ -81,6 +80,7 @@ clean :
 
 #M. Propre
 MrProper :
+	@make -f makefile_subdirs MrProper
 	@echo "### Make MrProper $(NAME)"
 	$(MAKE_MR_PROPER)
 	@make clean
