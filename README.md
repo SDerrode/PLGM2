@@ -19,7 +19,9 @@
 
   2. Install [gsl library](http://www.gnu.org/software/gsl/ "GNU Scientific Library>") and `pkg-config`. For GSL you need the `dev` library (meaning that you should also install GSL headers files for compilation).
 
-  3. Then `make`, or `make forced`. If all went well, the programs to run should be in `APP_DIR`.
+  3. On Ubuntu, you need to install the package `xutils-dev` for the command `makedepend` used by the makefiles. Install it using `sudo apt install xutils-dev`.
+
+  4. Then `make`, or `make forced`. If all went well, the programs to run should be in `APP_DIR`.
 
 
 ##2. Test Kalman programs with Octave scripts
